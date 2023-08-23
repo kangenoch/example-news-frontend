@@ -7,14 +7,14 @@ export function ArticleIndex(props) {
         <div key={article.url}>
           <h3>{article.title}</h3>
           <h6>{article.author}</h6>
-          <h8>
+          <h6>
             <p>{article.description}</p>
             <p>{article.url}</p>
             <p>
               <img src={article.urlToImage} width="100" />
             </p>
             <p>&nbsp;</p>
-          </h8>
+          </h6>
         </div>
       ))}
     </div>

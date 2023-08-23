@@ -7,7 +7,7 @@ export function Content() {
 
   const handleArticlesIndex = () => {
     console.log("handleArticlesIndex");
-    axios.get("https://newsapi.org/v2/everything?q=litecoin&apiKey=###API_KEY###").then((response) => {
+    axios.get("http://localhost:3000/").then((response) => {
       console.log(response.data);
       setArticles(response.data.articles);
     });
